@@ -5,26 +5,23 @@ import axios from 'axios';
 
 export default function Frontend() {
   const [ data, setData ] = useState(null)
-  const [ loading, setLoading ] = useState(true)
 
 
   useEffect(() => {
-      axios("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd")
+      axios("https://team-3-hackaton-server.herokuapp.com/api/frontend/road")
         .then((response) => {
+          console.log(response.data)
           setData(response.data);
         })
         .catch((error) => {
           console.error("Error fetching data: ", error);
         })
         .finally(() => {
-          setLoading(false);
-          console.log("fertig");
-          clearInterval();
         });
   }, []);
 
   return (
-    <div className="home">
+    <div>
       {data ? '' : <ClipLoader size={100} />}
         {data && <Card data={data} />}
     </div>

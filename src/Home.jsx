@@ -6,7 +6,7 @@ import frontend from './images/Frontend.png';
 import backend from './images/backend.png';
 import tool from './images/tool.jpg';
 import { Image } from '@chakra-ui/react';
-//import Image from 'next/image';
+import Footer from './Footer';
 import {
   Box,
   Center,
@@ -16,6 +16,7 @@ import {
   Avatar,
   useColorModeValue,
 } from '@chakra-ui/react';
+
 
 const Container = styled.div`
   height: 80vh;
@@ -32,6 +33,7 @@ const Container = styled.div`
 
 export default function Home() {
   return (
+    <>
     <Container>
       <Link to="/frontend">
         <Center py={6}>
@@ -172,5 +174,7 @@ export default function Home() {
         </Center>
       </Link>
     </Container>
+   <Footer/>
+   </>
   );
 }
