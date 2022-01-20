@@ -1,10 +1,11 @@
 import React from 'react';
-import { ChakraProvider, Box, theme } from '@chakra-ui/react';
+import { ChakraProvider, theme } from '@chakra-ui/react';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Frontend from './Frontend';
 import Backend from './Backend';
+import Details from './Details';
 import Tools from './Tools';
 
 function App() {
