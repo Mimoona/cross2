@@ -8,7 +8,7 @@ export default function Tool() {
 
 
   useEffect(() => {
-      axios("https://team-3-hackaton-server.herokuapp.com/api/frontend/road")
+      axios("https://team-3-hackaton-server.herokuapp.com/api/tool/road")
         .then((response) => {
           console.log(response.data)
           setData(response.data);
