@@ -7,6 +7,7 @@ import Frontend from './Frontend';
 import Backend from './Backend';
 import Details from './Details';
 import Tools from './Tools';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/tools/:name" element={<Details />} />
         </Routes>
       </Router>
+    <Footer />
     </ChakraProvider>
   );
 }

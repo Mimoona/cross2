@@ -6,7 +6,6 @@ import frontend from './images/Frontend.png';
 import backend from './images/backend.png';
 import tool from './images/tool.jpg';
 import { Image } from '@chakra-ui/react';
-import Footer from './Footer';
 import {
   Box,
   Center,
@@ -177,7 +176,6 @@ export default function Home() {
         </Center>
       </Link>
     </Container>
-   <Footer/>
    </>
   );
 }
