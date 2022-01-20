@@ -1,11 +1,14 @@
 import React from 'react'
 import './footerStyle.css'
+import Logo from './Img/Logo.png';
 
 export default function Footer() {
     return (
-        <div>
+        <div> 
+            
               <div class="footer-basic">
-        <footer>
+            
+        <footer> <img className="center" width={130} src={Logo} alt='Logo' />
             <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#">Home</a></li>
