@@ -1,10 +1,13 @@
 import Card from './Card';
 import ClipLoader from "react-spinners/ClipLoader";
-import { useEffect, useState } from 'react'
+import { useEffect, useState} from 'react'
 import axios from 'axios';
 
+
 function Details() {
-  const [ data, setData ] = useState(null)
+  const [ data, setData ] = useState();
+
+
 
 
   useEffect(() => {
@@ -21,9 +24,19 @@ function Details() {
           clearInterval();
         });
   }, []);
+  
 
 
-    return <div>Datails</div>;
+    return <div>
+      {/* {data.map((data, index) => (
+         <div className='pokeselect' key={index}> 
+         <h2>{data}</h2>
+         
+
+         </div>
+      ))} */}
+    
+    </div>;
   }
   
   export default Details;
