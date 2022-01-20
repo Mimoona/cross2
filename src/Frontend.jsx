@@ -8,7 +8,7 @@ export default function Frontend() {
 
 
   useEffect(() => {
-      axios("https://team-3-hackaton-server.herokuapp.com/api/all")
+      axios("https://team-3-hackaton-server.herokuapp.com/api/frontend/road")
         .then((response) => {
           console.log(response.data)
           setData(response.data);
@@ -17,13 +17,11 @@ export default function Frontend() {
           console.error("Error fetching data: ", error);
         })
         .finally(() => {
-          console.log("fertig");
-          clearInterval();
         });
   }, []);
 
   return (
-    <div className="home">
+    <div>
       {data ? '' : <ClipLoader size={100} />}
         {data && <Card data={data} />}
     </div>
