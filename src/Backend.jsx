@@ -19,7 +19,6 @@
           .finally(() => {
             setLoading(false);
             console.log("fertig");
-            clearInterval();
           });
     }, []);
   
@@ -30,4 +29,3 @@
       </div>
     );
   }
-  export default Backend;

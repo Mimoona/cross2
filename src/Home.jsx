@@ -7,12 +7,6 @@ function Home() {
   return (
     <>
   <div>
-<<<<<<< HEAD
-=======
-      <p>Home</p>
-     
-      {Navbar}
->>>>>>> cdeed7181199afcd30e7043f7bd1b4d7c5ecf1f4
       <h1>Roadmaps</h1>
   </div>
    <Footer/>
