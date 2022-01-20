@@ -38,9 +38,9 @@ export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div className='all'>
-      <Box  px={4}>
+      <Box px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box>Logo</Box>
+          <Box></Box>
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
@@ -83,6 +83,7 @@ export default function Nav() {
           </Flex>
         </Flex>
       </Box>
+      <h1 className='styleh1'>The road to glory</h1>
     </div>
   );
 }
