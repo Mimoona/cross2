@@ -17,6 +17,9 @@ function App() {
           <Route path="/frontend" element={<Frontend />} />
           <Route path="/backend" element={<Backend />} />
           <Route path="/tools" element={<Tools />} />
+          <Route path="/frontend:name" element={<Details />} />
+          <Route path="/backend:name" element={<Details />} />
+          <Route path="/toolsname" element={<Details />} />
         </Routes>
       </Router>
     </ChakraProvider>
