@@ -14,7 +14,6 @@ import {
   export default function Card({data}) {
 
 
-    console.log(data[1].image);
 
     return (
       <Center py={6}>
@@ -28,11 +27,11 @@ import {
           boxShadow={'2xl'}
           padding={4}>
           <Flex flex={1} bg="blue.200">
-            <Image
+            {/* <Image
               objectFit="cover"
               boxSize="100%"
               src={data[1].image}
-            />
+            /> */}
           </Flex>
           <Stack
             flex={1}

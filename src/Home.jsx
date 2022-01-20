@@ -5,9 +5,7 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
   <div>
-      {Navbar}
       <h1>Roadmaps</h1>
-      <Link to="/frontend" onClick={}></Link>
   </div>
   );
 }
