@@ -1,4 +1,4 @@
-function Home() {
+function Details() {
     return <div>Datails</div>;
   }
   
