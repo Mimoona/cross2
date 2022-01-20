@@ -7,6 +7,7 @@ import {
   Avatar,
 } from '@chakra-ui/react';
 import { Link } from 'react-router-dom'
+import './link.css'
 
 export default function Card({ data }) {
   console.log(data[0].name);
@@ -19,8 +20,8 @@ export default function Card({ data }) {
         m={10}
       >
         {data.map(data => (
-          <Link key={data.id} to={'/' + data.name}>
             <Stack
+              key={data.id}
               borderWidth="1px"
               borderRadius="lg"
               w={{ sm: '100%', md: '540px' }}
@@ -50,7 +51,7 @@ export default function Card({ data }) {
                     src={data.logo_url}
                   />
                 </Stack>
-                <Text textAlign={'center'} px={3} fontSize={'s'}>
+                <Text className="cardlinke" textAlign={'center'} px={3} fontSize={'s'}>
                   {data.description}
                 </Text>
                 <Stack
@@ -71,7 +72,6 @@ export default function Card({ data }) {
                 </Stack>
               </Stack>
             </Stack>
-          </Link>
         ))}
       </Grid>
     </div>
