@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChakraProvider, theme } from '@chakra-ui/react';
+import { ChakraProvider, theme, ColorModeProvider, CSSReset, } from '@chakra-ui/react';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
@@ -18,9 +18,9 @@ function App() {
           <Route path="/frontend" element={<Frontend />} />
           <Route path="/backend" element={<Backend />} />
           <Route path="/tools" element={<Tools />} />
-          <Route path="/frontend:name" element={<Details />} />
-          <Route path="/backend:name" element={<Details />} />
-          <Route path="/toolsname" element={<Details />} />
+          <Route path="/frontend/:name" element={<Details />} />
+          <Route path="/backend/:name" element={<Details />} />
+          <Route path="/tools/:name" element={<Details />} />
         </Routes>
       </Router>
     </ChakraProvider>
