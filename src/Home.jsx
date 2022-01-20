@@ -19,7 +19,6 @@ import {
 
 
 
-function Home() {
 
 
 const Container = styled.div`
